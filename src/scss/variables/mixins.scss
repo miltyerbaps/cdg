@@ -1,0 +1,49 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// Main font size
+@mixin main-font-size() {
+  @include font-size(1.6);
+}
+
+// Box model
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 7
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  clear: both;
+}
+
+// Floating Block
+@mixin float-block {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+// Preven Web-kit
+@mixin no-webkit {
+  -webkit-appearance: none;
+  outline: none;
+}

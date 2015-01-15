@@ -1,0 +1,66 @@
+/* Font-face Definitions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Bd';
+  src: url('../fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Bd.otf') format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Lt.otf') format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url('../fonts/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Roman.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Roman.ttf') format('truetype'), url('../fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ImpregnablePersonalUseOnly';
+  src: url('../fonts/ImpregnablePersonalUseOnly.eot?#iefix') format('embedded-opentype'), url('../fonts/ImpregnablePersonalUseOnly.woff') format('woff'), url('../fonts/ImpregnablePersonalUseOnly.ttf') format('truetype'), url('../fonts/ImpregnablePersonalUseOnly.svg#ImpregnablePersonalUseOnly') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Bold.woff') format('woff'), url('../fonts/Ubuntu-Bold.ttf') format('truetype'), url('../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-BoldItalic';
+  src: url('../fonts/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-BoldItalic.woff') format('woff'), url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype'), url('../fonts/Ubuntu-BoldItalic.svg#Ubuntu-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Light.woff') format('woff'), url('../fonts/Ubuntu-Light.ttf') format('truetype'), url('../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font__helvetican-l: 'HelveticaNeueLTStd-Lt', Helvetica Neue, Helvetica, Arial, sans-serif;
+$font__helvetican-r: 'HelveticaNeueLTStd-Roman', Helvetica Neue, Helvetica, Arial, sans-serif;
+$font__helvetican-b: 'HelveticaNeueLTStd-Bd', Helvetica Neue, Helvetica, Arial, sans-serif;
+$font__ubuntu-l: 'Ubuntu-Light', sans-serif;
+$font__ubuntu-bi: 'Ubuntu-BoldItalic', sans-serif;
+$font__ubuntu-b: 'Ubuntu-Bold', sans-serif;
+$font__impregnable: 'ImpregnablePersonalUseOnly', sans-serif;
+$font__trebuchet: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
