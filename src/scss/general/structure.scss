@@ -553,6 +553,18 @@ hr {
 
 }
 
+.main-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  @include transition(margin 1.5s ease 0s);
+  @include box-shadow(rgba(0, 0, 0, 0.5) 0 0 5px);
+  min-height: 700px;
+  background: $color__background-input;
+
+}
+
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -572,6 +584,166 @@ hr {
   width: 100%;
   overflow: hidden;
 
+}
+
+.header-left {
+  display: block;
+  padding: 15px 0;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    a {
+      display: block;
+      @include main-font-size();
+      background: url("../images/mobile-logo.png") no-repeat 0 0;
+      width: 83px;
+      height: 42px;
+      margin: 0 auto;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.header-right {
+  display: table;
+  width: 100%;
+  background: $color__background-light-blue;
+  border-bottom: 1px solid $color__border-mobile-nav;
+
+  .icon-nav {
+    display: table-cell;
+    width: 59px;
+    height: 65px;
+    @include transition(all 0.5s ease 0s);
+
+    a {
+      display: block;
+      width: 59px;
+      height: 65px;
+      background: url("../images/mobile-nav.png") no-repeat 0 0;
+      border-right: 1px solid $color__border-mobile-nav;
+      @include transition(all 0.5s ease 0s);
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        @include opacity(0.5);
+      }
+
+    }
+
+    &:hover, &.active {
+      background: $color__background-dark-blue;
+    }
+
+    &.active {
+      a {
+        @include opacity(0.5);
+      }
+    }
+  }
+
+  .header-info {
+    display: table-cell;
+    text-align: center;
+    height: 65px;
+
+    .top-contact {
+      display: block;
+      float: right;
+      width: 50%;
+      height: 65px;
+      text-align: center;
+      padding: 20px 0 0 0;
+
+      span {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        max-width: 100px;
+        font-family: $font__helvetican-l;
+        @include font-size(1.0);
+        letter-spacing: 0.04em;
+        line-height: 1em;
+        font-style: normal;
+        color: $color__link;
+        clear: both;
+      }
+
+      a {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        max-width: 100px;
+        text-align: center;
+        font-family: $font__helvetican-b;
+        @include font-size(1.0);
+        letter-spacing: 0.04em;
+        line-height: 1.0em;
+        margin: 3px 0 0 0;
+        clear: both;
+      }
+    }
+
+    .top-icon {
+      display: block;
+      float: left;
+      height: 65px;
+      width: 50%;
+      text-align: right;
+      padding: 14px 33px 0 0;
+
+      img {
+        width: 39px;
+        height: 39px;
+      }
+
+    }
+
+  }
+
+  .icon-phone {
+    display: table-cell;
+    width: 59px;
+    height: 65px;
+    @include transition(all 0.5s ease 0s);
+
+    a {
+      display: block;
+      width: 59px;
+      height: 65px;
+      background: url("../images/mobile-phone.png") no-repeat 0 0;
+      border-left: 1px solid $color__border-mobile-nav;
+      @include transition(all 0.5s ease 0s);
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        @include opacity(0.5);
+      }
+
+    }
+
+    &:hover, &.active {
+      background: $color__background-dark-blue;
+    }
+
+    &.active {
+      a {
+        @include opacity(0.5);
+      }
+    }
+
+  }
 }
 
 .main-nav {
@@ -639,18 +811,6 @@ hr {
 
 }
 
-.main-body {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  @include transition(margin 1.5s ease 0s);
-  @include box-shadow(rgba(0, 0, 0, 0.5) 0 0 5px);
-  min-height: 700px;
-  background: $color__background-input;
-
-}
-
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -678,12 +838,14 @@ there.
   .wrapper {
   }
 
+  .main-body {
+  }
+
   .header {
     height: 104px;
   }
 
   .header-left {
-    display: block;
     float: left;
     padding: 25px 0 0 6px;
 
@@ -709,51 +871,77 @@ there.
   .header-right {
     display: block;
     float: right;
+    width: auto;
+    background: none;
+    border-bottom: none;
 
-    .top-contact {
-      display: block;
-      float: left;
-      padding: 30px 0 0 0;
-      width: 115px;
-      text-align: right;
-
-      span {
-        display: inline-block;
-        float: left;
-        width: 100%;
-        font-family: $font__helvetican-l;
-        @include font-size(1.2);
-        letter-spacing: 0.04em;
-        line-height: 1.2em;
-        font-style: normal;
-        color: $color__link;
-
-      }
-
-      a {
-        display: inline-block;
-        float: left;
-        width: 100%;
-        font-family: $font__helvetican-b;
-        @include font-size(1.4);
-        letter-spacing: 0.04em;
-        line-height: 1.4em;
-        margin: 3px 0 0 0;
-
-      }
+    .mobile {
+      display: none;
     }
 
-    .top-icon {
+    .header-info {
       display: block;
-      float: right;
-      padding: 25px 5px 0 10px;
-      @include transition(all 0.5s ease 0s);
+      height: auto;
+      width: auto;
 
-      &:hover {
-        padding: 28px 5px 0 10px;
-        @include opacity(0.4);
+      .top-contact {
+        display: block;
+        float: left;
+        padding: 30px 0 0 0;
+        width: 115px;
+        text-align: right;
+
+        span {
+          display: inline-block;
+          float: left;
+          width: 100%;
+          max-width: inherit;
+          font-family: $font__helvetican-l;
+          @include font-size(1.2);
+          letter-spacing: 0.04em;
+          line-height: 1.2em;
+          font-style: normal;
+          color: $color__link;
+          clear: none;
+
+        }
+
+        a {
+          display: inline-block;
+          float: left;
+          width: 100%;
+          text-align: right;
+          max-width: inherit;
+          font-family: $font__helvetican-b;
+          @include font-size(1.4);
+          letter-spacing: 0.04em;
+          line-height: 1.4em;
+          margin: 3px 0 0 0;
+          clear: none;
+
+        }
       }
 
+      .top-icon {
+        display: block;
+        float: right;
+        padding: 25px 5px 0 10px;
+        height: auto;
+        width: auto;
+        text-align: center;
+        @include transition(all 0.5s ease 0s);
+
+        &:hover {
+          padding: 28px 5px 0 10px;
+          @include opacity(0.4);
+        }
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+
+      }
     }
 
   }
@@ -802,8 +990,6 @@ there.
 
   }
 
-  .main-body {
-  }
 }
 
 /* Larger than desktop */
@@ -829,6 +1015,28 @@ there.
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
+
+  .header-left {
+
+    h1 {
+      a {
+        background-image: url("../images/mobile-logo@2x.png");
+        background-size: 83px 42px;
+      }
+    }
+
+  }
+
+  .header-right {
+
+    .icon-nav {
+      a {
+        background-image: url("../images/mobile-nav@2x.png");
+        background-size: 59px 65px;
+
+      }
+    }
+  }
 
   .main-nav {
 

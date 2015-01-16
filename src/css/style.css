@@ -1047,6 +1047,23 @@ hr {
     overflow-x: hidden;
 }
 
+.main-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -moz-transition: margin 1.5s ease 0s;
+    -o-transition: margin 1.5s ease 0s;
+    -webkit-transition: margin 1.5s ease;
+    -webkit-transition-delay: 0s;
+    transition: margin 1.5s ease 0s;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    min-height: 700px;
+    background: #fff;
+}
+
 .skip-link {
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
@@ -1065,6 +1082,180 @@ hr {
     display: block;
     width: 100%;
     overflow: hidden;
+}
+
+.header-left {
+    display: block;
+    padding: 15px 0;
+}
+
+.header-left h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header-left h1 a {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    background: url("../images/mobile-logo.png") no-repeat 0 0;
+    width: 83px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.header-left h1 a span {
+    display: none;
+}
+
+.header-right {
+    display: table;
+    width: 100%;
+    background: #e2f3fe;
+    border-bottom: 1px solid #bad6e8;
+}
+
+.header-right .icon-nav {
+    display: table-cell;
+    width: 59px;
+    height: 65px;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -webkit-transition-delay: 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.header-right .icon-nav a {
+    display: block;
+    width: 59px;
+    height: 65px;
+    background: url("../images/mobile-nav.png") no-repeat 0 0;
+    border-right: 1px solid #bad6e8;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -webkit-transition-delay: 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.header-right .icon-nav a span {
+    display: none;
+}
+
+.header-right .icon-nav a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+.header-right .icon-nav:hover, .header-right .icon-nav.active {
+    background: #d2ebfc;
+}
+
+.header-right .icon-nav.active a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+.header-right .header-info {
+    display: table-cell;
+    text-align: center;
+    height: 65px;
+}
+
+.header-right .header-info .top-contact {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 65px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.header-right .header-info .top-contact span {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 100px;
+    font-family: "HelveticaNeueLTStd-Lt", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    line-height: 1em;
+    font-style: normal;
+    color: #273c72;
+    clear: both;
+}
+
+.header-right .header-info .top-contact a {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    font-family: "HelveticaNeueLTStd-Bd", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    line-height: 1.0em;
+    margin: 3px 0 0 0;
+    clear: both;
+}
+
+.header-right .header-info .top-icon {
+    display: block;
+    float: left;
+    height: 65px;
+    width: 50%;
+    text-align: right;
+    padding: 14px 33px 0 0;
+}
+
+.header-right .header-info .top-icon img {
+    width: 39px;
+    height: 39px;
+}
+
+.header-right .icon-phone {
+    display: table-cell;
+    width: 59px;
+    height: 65px;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -webkit-transition-delay: 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.header-right .icon-phone a {
+    display: block;
+    width: 59px;
+    height: 65px;
+    background: url("../images/mobile-phone.png") no-repeat 0 0;
+    border-left: 1px solid #bad6e8;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -webkit-transition-delay: 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.header-right .icon-phone a span {
+    display: none;
+}
+
+.header-right .icon-phone a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+.header-right .icon-phone:hover, .header-right .icon-phone.active {
+    background: #d2ebfc;
+}
+
+.header-right .icon-phone.active a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
 }
 
 .main-nav {
@@ -1137,23 +1328,6 @@ hr {
     color: #273c72;
 }
 
-.main-body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    -moz-transition: margin 1.5s ease 0s;
-    -o-transition: margin 1.5s ease 0s;
-    -webkit-transition: margin 1.5s ease;
-    -webkit-transition-delay: 0s;
-    transition: margin 1.5s ease 0s;
-    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
-    min-height: 700px;
-    background: #fff;
-}
-
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -1175,7 +1349,6 @@ there.
     }
 
     .header-left {
-        display: block;
         float: left;
         padding: 25px 0 0 6px;
     }
@@ -1202,9 +1375,22 @@ there.
     .header-right {
         display: block;
         float: right;
+        width: auto;
+        background: none;
+        border-bottom: none;
     }
 
-    .header-right .top-contact {
+    .header-right .mobile {
+        display: none;
+    }
+
+    .header-right .header-info {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .header-right .header-info .top-contact {
         display: block;
         float: left;
         padding: 30px 0 0 0;
@@ -1212,10 +1398,11 @@ there.
         text-align: right;
     }
 
-    .header-right .top-contact span {
+    .header-right .header-info .top-contact span {
         display: inline-block;
         float: left;
         width: 100%;
+        max-width: inherit;
         font-family: "HelveticaNeueLTStd-Lt", Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 12px;
         font-size: 1.2rem;
@@ -1223,24 +1410,31 @@ there.
         line-height: 1.2em;
         font-style: normal;
         color: #273c72;
+        clear: none;
     }
 
-    .header-right .top-contact a {
+    .header-right .header-info .top-contact a {
         display: inline-block;
         float: left;
         width: 100%;
+        text-align: right;
+        max-width: inherit;
         font-family: "HelveticaNeueLTStd-Bd", Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         font-size: 1.4rem;
         letter-spacing: 0.04em;
         line-height: 1.4em;
         margin: 3px 0 0 0;
+        clear: none;
     }
 
-    .header-right .top-icon {
+    .header-right .header-info .top-icon {
         display: block;
         float: right;
         padding: 25px 5px 0 10px;
+        height: auto;
+        width: auto;
+        text-align: center;
         -moz-transition: all 0.5s ease 0s;
         -o-transition: all 0.5s ease 0s;
         -webkit-transition: all 0.5s ease;
@@ -1248,10 +1442,15 @@ there.
         transition: all 0.5s ease 0s;
     }
 
-    .header-right .top-icon:hover {
+    .header-right .header-info .top-icon:hover {
         padding: 28px 5px 0 10px;
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
         opacity: 0.4;
+    }
+
+    .header-right .header-info .top-icon img {
+        height: 50px;
+        width: 50px;
     }
 
     .main-nav {
@@ -1300,6 +1499,16 @@ there.
 /* Larger than Desktop HD */
 /* Retina Display 1.5 dpr */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    .header-left h1 a {
+        background-image: url("../images/mobile-logo@2x.png");
+        background-size: 83px 42px;
+    }
+
+    .header-right .icon-nav a {
+        background-image: url("../images/mobile-nav@2x.png");
+        background-size: 59px 65px;
+    }
+
     .main-nav .mobile-logo h1 a {
         background-image: url("../images/mobile-logo@2x.png");
         background-size: 83px 42px;
