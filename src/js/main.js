@@ -42,20 +42,49 @@
 
     };
 
-    // run our function on load
-    sticky_navigation();
+    /**
+     * Mobile Nav
+     */
 
-    // and run it again every time you scroll
+    var mobile_nav = function () {
+
+        var nav_size = $('.main-nav').width(),
+            main_body = $('.main-body'),
+            icon_div = $('.icon-nav'),
+            icon_nav = $('.icon-nav a');
+
+        icon_nav.unbind().click(function() {
+
+            main_body.toggleClass('aside');
+            icon_div.toggleClass('active');
+
+            return false;
+
+        });
+
+        if (nav_size > 750){
+            main_body.removeClass('aside');
+            icon_div.removeClass('active');
+        }
+
+    };
+
+
+    // run our functions on load
+    sticky_navigation();
+    sticky_class();
+    mobile_nav();
+
+    // run our functions on scroll
     $(window).scroll(function () {
         sticky_navigation();
     });
 
-    // run our class function on load
-    sticky_class();
 
-    // and run it again every time you resize
+    // run our functions on resize
     $(window).resize(function () {
         sticky_class();
+        mobile_nav();
     });
 
 
